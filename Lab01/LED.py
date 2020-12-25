@@ -7,16 +7,6 @@ GPIO.setup(LED_PIN, GPIO.OUT)
 s = [1,1,1]
 o = [3,3,3]
 
-"""
-while True:
-    print("LED is on")
-    GPIO.output(LED_PIN, GPIO.HIGH)
-    time.sleep(1)
-    print("LED is off")
-    GPIO.output(LED_PIN, GPIO.LOW)
-    time.sleep(1)
-"""
-
 while True:
     for i in range(3):
         GPIO.output(LED_PIN, GPIO.HIGH)
